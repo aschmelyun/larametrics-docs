@@ -9,6 +9,7 @@ module.exports = {
             }
         ]
     ],
+    ga: 'UA-128047706-1',
     themeConfig: {
         logo: '/larametrics-logo.svg',
         nav: [
