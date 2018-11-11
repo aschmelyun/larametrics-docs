@@ -51,6 +51,12 @@ The max amount of log entries that should be stored in the database at any given
 
 Setting this to true allows Larametrics to watch for requests sent from and received to your application, recording them in the `larametrics_requests` table. As of right now there's no filter for specific request types (e.g. GET, POST, DELETE), all are either watched or not watched depending on this value.
 
+### requestsToSkip
+- Type: `array`
+- Default: `['login']`
+
+By default, when requestsWatched is enabled, all requests are watched. If you would like Larametrics to skip a particular path and not record that route, add it to this array. Wildcard matching is enabled as well, using asterisks (*) in a route name.
+
 ### requestsWatchedExpireDays
 - Type: `integer`
 - Default: `10`
