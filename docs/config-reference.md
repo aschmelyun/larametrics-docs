@@ -6,6 +6,14 @@ There are also two .env variables you'll need to set depending on if you use not
 - **LARAMETRICS_NOTIFICATION_EMAIL**, the address that all email notifications will be routed to
 - **LARAMETRICS_NOTIFICATION_SLACK_WEBHOOK**, a Slack webhook configured for receiving requests and adding messages to a specified channel. More info [here](https://get.slack.help/hc/en-us/articles/115005265063-Incoming-WebHooks-for-Slack).
 
+Additionally, there's a few other niche variables that you can set specifically for notifications. See a brief description of each below, or a more details on the documentation site.
+
+- **LARAMETRICS_FROM_EMAIL**, the email address that notifications will appear to be sent from
+- **LARAMETRICS_FROM_NAME**, the name that will appear alongside associated email notifications
+- **LARAMETRICS_MODEL_SUBJECT**, the subject of notification emails that arrive when models are created/updated/deleted
+- **LARAMETRICS_LOG_SUBJECT**, the subject of notification emails that arrive when an application log event is recorded
+- **LARAMETRICS_ROUTE_SUBJECT**, the subject of notification emails that arrive when a route has been visited
+
 ## Models
 ### modelsWatched
 - Type: `array`
